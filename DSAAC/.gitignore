@@ -1,0 +1,8 @@
+Debug
+DSAAC
+
+# Unnecessary visual studio project file
+*.opensdf
+*.sdf
+*.suo
+*.user
