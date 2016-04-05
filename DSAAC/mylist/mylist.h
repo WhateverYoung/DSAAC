@@ -7,13 +7,14 @@
 extern "C"{
 #endif /* __cplusplus */
 
-#define ElementType int
-#define MAX_STRINGLENGTH 500
 
-struct Node;
-typedef struct Node *PtrToNode;
-typedef PtrToNode List;
-typedef PtrToNode Position;
+typedef struct Node
+{
+	ElementType Element;
+	struct Node *Next;
+}*List;
+
+typedef List Position;
 
 List MakeEmpty(List L);
 int IsEmpty(List L);

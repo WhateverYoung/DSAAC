@@ -1,10 +1,5 @@
 # include "mylist.h"
 
-struct Node
-{
-	ElementType Element;
-	Position Next;
-};
 
 //Çå¿ÕÁÐ±í
 List MakeEmpty(List L)
@@ -76,8 +71,8 @@ void Insert(ElementType X, List L, Position p)
 	pTmp = (Position)malloc(sizeof(struct Node));
 	if(NULL == pTmp)
 	{
-		char cm[MAX_STRINGLENGTH];
-		sprintf(cm,"Fetal error in function Insert!");
+		char cm[MAX_STRINGLENGTH+1];
+		sprintf_s(cm,MAX_STRINGLENGTH,"Fetal error in function Insert!");
 		ErrorHand(ERROR, cm);
 	}
 

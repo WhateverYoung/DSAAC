@@ -1,5 +1,7 @@
 # include "common.h"
 
+
+
 void ErrorHand(Type_Message m, char* cm)
 {
 	switch(m)

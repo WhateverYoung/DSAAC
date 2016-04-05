@@ -1,5 +1,6 @@
 # include "common.h"
-
+# include "mylist.h"
+# include "mystack.h"
 
 int main()
 {

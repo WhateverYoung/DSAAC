@@ -8,6 +8,9 @@
 extern "C"{
 #endif /* __cplusplus */
 
+#define ElementType int
+#define MAX_STRINGLENGTH 500
+
 typedef enum
 {
 	RET_OK,
